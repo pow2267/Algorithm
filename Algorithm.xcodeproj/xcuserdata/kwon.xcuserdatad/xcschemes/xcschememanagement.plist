@@ -9,6 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>KthNumber.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>76783B6826666A3C001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
