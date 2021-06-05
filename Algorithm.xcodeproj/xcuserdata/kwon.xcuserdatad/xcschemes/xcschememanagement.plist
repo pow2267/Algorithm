@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RomanToInteger.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>TwoSum.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>76783BAC2668B935001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C02266A0531001F9241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
