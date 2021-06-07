@@ -14,6 +14,7 @@
 		76783C06266A0531001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783C05266A0531001F9241 /* main.swift */; };
 		76783C1C266BAFB2001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783C1B266BAFB2001F9241 /* main.swift */; };
 		76783C28266D01EA001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783C27266D01EA001F9241 /* main.swift */; };
+		76783C33266E5A91001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783C32266E5A90001F9241 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +81,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		76783C2E266E5A90001F9241 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +107,8 @@
 		76783C1B266BAFB2001F9241 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76783C25266D01EA001F9241 /* OddOccurrencesInArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OddOccurrencesInArray; sourceTree = BUILT_PRODUCTS_DIR; };
 		76783C27266D01EA001F9241 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		76783C30266E5A90001F9241 /* CountOverlapedElements1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CountOverlapedElements1; sourceTree = BUILT_PRODUCTS_DIR; };
+		76783C32266E5A90001F9241 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76783C2D266E5A90001F9241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -162,6 +181,7 @@
 				76783C04266A0531001F9241 /* AppleOrange */,
 				76783C1A266BAFB2001F9241 /* RomanToInteger */,
 				76783C26266D01EA001F9241 /* OddOccurrencesInArray */,
+				76783C31266E5A90001F9241 /* CountOverlapedElements1 */,
 				76783B6A26666A3C001F9241 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,6 +196,7 @@
 				76783C03266A0531001F9241 /* AppleOrange */,
 				76783C19266BAFB2001F9241 /* RomanToInteger */,
 				76783C25266D01EA001F9241 /* OddOccurrencesInArray */,
+				76783C30266E5A90001F9241 /* CountOverlapedElements1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,6 +255,14 @@
 				76783C27266D01EA001F9241 /* main.swift */,
 			);
 			path = OddOccurrencesInArray;
+			sourceTree = "<group>";
+		};
+		76783C31266E5A90001F9241 /* CountOverlapedElements1 */ = {
+			isa = PBXGroup;
+			children = (
+				76783C32266E5A90001F9241 /* main.swift */,
+			);
+			path = CountOverlapedElements1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +387,23 @@
 			productReference = 76783C25266D01EA001F9241 /* OddOccurrencesInArray */;
 			productType = "com.apple.product-type.tool";
 		};
+		76783C2F266E5A90001F9241 /* CountOverlapedElements1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76783C34266E5A91001F9241 /* Build configuration list for PBXNativeTarget "CountOverlapedElements1" */;
+			buildPhases = (
+				76783C2C266E5A90001F9241 /* Sources */,
+				76783C2D266E5A90001F9241 /* Frameworks */,
+				76783C2E266E5A90001F9241 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountOverlapedElements1;
+			productName = CountOverlapedElements1;
+			productReference = 76783C30266E5A90001F9241 /* CountOverlapedElements1 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -388,6 +434,9 @@
 					76783C24266D01EA001F9241 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					76783C2F266E5A90001F9241 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 				};
 			};
 			buildConfigurationList = 76783B6426666A3C001F9241 /* Build configuration list for PBXProject "Algorithm" */;
@@ -410,6 +459,7 @@
 				76783C02266A0531001F9241 /* AppleOrange */,
 				76783C18266BAFB2001F9241 /* RomanToInteger */,
 				76783C24266D01EA001F9241 /* OddOccurrencesInArray */,
+				76783C2F266E5A90001F9241 /* CountOverlapedElements1 */,
 			);
 		};
 /* End PBXProject section */
@@ -468,6 +518,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				76783C28266D01EA001F9241 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76783C2C266E5A90001F9241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76783C33266E5A91001F9241 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +801,28 @@
 			};
 			name = Release;
 		};
+		76783C35266E5A91001F9241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76783C36266E5A91001F9241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -814,6 +894,15 @@
 			buildConfigurations = (
 				76783C2A266D01EA001F9241 /* Debug */,
 				76783C2B266D01EA001F9241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76783C34266E5A91001F9241 /* Build configuration list for PBXNativeTarget "CountOverlapedElements1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76783C35266E5A91001F9241 /* Debug */,
+				76783C36266E5A91001F9241 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
