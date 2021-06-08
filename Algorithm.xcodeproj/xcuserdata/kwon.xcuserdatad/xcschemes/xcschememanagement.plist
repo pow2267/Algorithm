@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>FindDivisors.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>KthNumber.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
