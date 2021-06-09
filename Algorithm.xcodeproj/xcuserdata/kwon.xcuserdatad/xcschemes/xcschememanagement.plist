@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>DrawingBook.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>FindDivisors.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -62,12 +67,42 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>76783B892667A03E001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783B962668A3B0001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783BA12668AEFC001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>76783BAC2668B935001F9241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>76783C02266A0531001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C18266BAFB2001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C24266D01EA001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C502670A55F001F9241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
