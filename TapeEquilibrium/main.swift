@@ -8,38 +8,23 @@
 import Foundation
 
 func solution(_ A : inout [Int]) -> Int {
-    var totalSum = 0
-    var devidedSum = 0
-    var index = 0
-    var result = 0
-    var absSubtraction = 0
-
+    var leftSum = 0
+    var rightSum = 0
     A.forEach {
-        totalSum += $0
+        rightSum += $0
     }
+    var difference = 0
+    var result = 0
 
     for i in 1..<A.count {
-        index = i
-        devidedSum = 0
-        
-        if i <= A.count/2 {
-            repeat {
-                index -= 1
-                devidedSum += A[index]
-            } while index > 0
-        } else {
-            repeat {
-                devidedSum += A[index]
-                index += 1
-            } while index < A.count
-        }
-        
-        absSubtraction = abs(totalSum - devidedSum*2)
+        leftSum += A[i-1]
+        rightSum -= A[i-1]
+        difference = abs(leftSum-rightSum)
 
         if i == 1 {
-            result = absSubtraction
+            result = difference
         } else {
-            result = (result < absSubtraction ? result : absSubtraction)
+            result = (result > difference ? difference : result)
         }
     }
 
