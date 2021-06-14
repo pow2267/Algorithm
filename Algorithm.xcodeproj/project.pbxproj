@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		761B555726739DC5004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B555626739DC5004641D3 /* main.swift */; };
 		761B556226750067004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B556126750067004641D3 /* main.swift */; };
+		761B556D26772C41004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B556C26772C41004641D3 /* main.swift */; };
 		76783B8D2667A03E001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783B8C2667A03E001F9241 /* main.swift */; };
 		76783B9A2668A3B0001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783B992668A3B0001F9241 /* main.swift */; };
 		76783BA52668AEFC001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783BA42668AEFC001F9241 /* main.swift */; };
@@ -43,6 +44,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		761B555D26750067004641D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		761B556826772C41004641D3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -167,6 +177,8 @@
 		761B555626739DC5004641D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		761B555F26750067004641D3 /* TapeEquilibrium */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TapeEquilibrium; sourceTree = BUILT_PRODUCTS_DIR; };
 		761B556126750067004641D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		761B556A26772C41004641D3 /* CountWords */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CountWords; sourceTree = BUILT_PRODUCTS_DIR; };
+		761B556C26772C41004641D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76783B8A2667A03E001F9241 /* KthNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KthNumber; sourceTree = BUILT_PRODUCTS_DIR; };
 		76783B8C2667A03E001F9241 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76783B972668A3B0001F9241 /* TwoSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TwoSum; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +221,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		761B555C26750067004641D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761B556726772C41004641D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,6 +337,14 @@
 			path = TapeEquilibrium;
 			sourceTree = "<group>";
 		};
+		761B556B26772C41004641D3 /* CountWords */ = {
+			isa = PBXGroup;
+			children = (
+				761B556C26772C41004641D3 /* main.swift */,
+			);
+			path = CountWords;
+			sourceTree = "<group>";
+		};
 		76783B6026666A3C001F9241 = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +362,7 @@
 				76783C5D2671BF7E001F9241 /* ClawMachine */,
 				761B555526739DC5004641D3 /* ValidParentheses */,
 				761B556026750067004641D3 /* TapeEquilibrium */,
+				761B556B26772C41004641D3 /* CountWords */,
 				76783B6A26666A3C001F9241 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -357,6 +385,7 @@
 				761B554926739C88004641D3 /* MergeTwoLists */,
 				761B555426739DC4004641D3 /* ValidParentheses */,
 				761B555F26750067004641D3 /* TapeEquilibrium */,
+				761B556A26772C41004641D3 /* CountWords */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -509,6 +538,23 @@
 			name = TapeEquilibrium;
 			productName = TapeEquilibrium;
 			productReference = 761B555F26750067004641D3 /* TapeEquilibrium */;
+			productType = "com.apple.product-type.tool";
+		};
+		761B556926772C41004641D3 /* CountWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761B557026772C41004641D3 /* Build configuration list for PBXNativeTarget "CountWords" */;
+			buildPhases = (
+				761B556626772C41004641D3 /* Sources */,
+				761B556726772C41004641D3 /* Frameworks */,
+				761B556826772C41004641D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountWords;
+			productName = CountWords;
+			productReference = 761B556A26772C41004641D3 /* CountWords */;
 			productType = "com.apple.product-type.tool";
 		};
 		76783B892667A03E001F9241 /* KthNumber */ = {
@@ -733,6 +779,9 @@
 					761B555E26750067004641D3 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					761B556926772C41004641D3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					76783B892667A03E001F9241 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -799,6 +848,7 @@
 				761B554826739C88004641D3 /* MergeTwoLists */,
 				761B555326739DC4004641D3 /* ValidParentheses */,
 				761B555E26750067004641D3 /* TapeEquilibrium */,
+				761B556926772C41004641D3 /* CountWords */,
 			);
 		};
 /* End PBXProject section */
@@ -824,6 +874,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				761B556226750067004641D3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761B556626772C41004641D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761B556D26772C41004641D3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,6 +1040,28 @@
 			name = Debug;
 		};
 		761B556426750067004641D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		761B556E26772C41004641D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		761B556F26772C41004641D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1397,6 +1477,15 @@
 			buildConfigurations = (
 				761B556326750067004641D3 /* Debug */,
 				761B556426750067004641D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761B557026772C41004641D3 /* Build configuration list for PBXNativeTarget "CountWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761B556E26772C41004641D3 /* Debug */,
+				761B556F26772C41004641D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
