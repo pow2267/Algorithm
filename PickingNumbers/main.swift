@@ -30,9 +30,9 @@ func pickingNumbers(a: [Int]) -> Int {
 
     for num in nums {
         if let after = dic[num+1] { // 연속된 숫자가 있을 때
-            result = (after+dic[num]! > result ? after+dic[num]! : result)
+            result = max(after+dic[num]!, result)
         } else { // 연속된 숫자가 없을 때
-            result = (dic[num]! > result ? dic[num]! : result)
+            result = max(dic[num]!, result)
         }
     }
     
