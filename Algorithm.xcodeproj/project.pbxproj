@@ -12,6 +12,7 @@
 		761B556D26772C41004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B556C26772C41004641D3 /* main.swift */; };
 		761B557826786838004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B557726786838004641D3 /* main.swift */; };
 		761B558326786EC6004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B558226786EC6004641D3 /* main.swift */; };
+		761B558E267A3F03004641D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B558D267A3F03004641D3 /* main.swift */; };
 		76783B8D2667A03E001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783B8C2667A03E001F9241 /* main.swift */; };
 		76783B9A2668A3B0001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783B992668A3B0001F9241 /* main.swift */; };
 		76783BA52668AEFC001F9241 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76783BA42668AEFC001F9241 /* main.swift */; };
@@ -73,6 +74,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		761B557E26786EC6004641D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		761B5589267A3F03004641D3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -203,6 +213,8 @@
 		761B557726786838004641D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		761B558026786EC6004641D3 /* PickingNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PickingNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
 		761B558226786EC6004641D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		761B558B267A3F03004641D3 /* PressKeypad */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PressKeypad; sourceTree = BUILT_PRODUCTS_DIR; };
+		761B558D267A3F03004641D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76783B8A2667A03E001F9241 /* KthNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KthNumber; sourceTree = BUILT_PRODUCTS_DIR; };
 		76783B8C2667A03E001F9241 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76783B972668A3B0001F9241 /* TwoSum */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TwoSum; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +278,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		761B557D26786EC6004641D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761B5588267A3F03004641D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,6 +418,14 @@
 			path = PickingNumbers;
 			sourceTree = "<group>";
 		};
+		761B558C267A3F03004641D3 /* PressKeypad */ = {
+			isa = PBXGroup;
+			children = (
+				761B558D267A3F03004641D3 /* main.swift */,
+			);
+			path = PressKeypad;
+			sourceTree = "<group>";
+		};
 		76783B6026666A3C001F9241 = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +446,7 @@
 				761B556B26772C41004641D3 /* CountWords */,
 				761B557626786838004641D3 /* SalesByMatch */,
 				761B558126786EC6004641D3 /* PickingNumbers */,
+				761B558C267A3F03004641D3 /* PressKeypad */,
 				76783B6A26666A3C001F9241 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -444,6 +472,7 @@
 				761B556A26772C41004641D3 /* CountWords */,
 				761B557526786838004641D3 /* SalesByMatch */,
 				761B558026786EC6004641D3 /* PickingNumbers */,
+				761B558B267A3F03004641D3 /* PressKeypad */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -647,6 +676,23 @@
 			name = PickingNumbers;
 			productName = PickingNumbers;
 			productReference = 761B558026786EC6004641D3 /* PickingNumbers */;
+			productType = "com.apple.product-type.tool";
+		};
+		761B558A267A3F03004641D3 /* PressKeypad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761B5591267A3F03004641D3 /* Build configuration list for PBXNativeTarget "PressKeypad" */;
+			buildPhases = (
+				761B5587267A3F03004641D3 /* Sources */,
+				761B5588267A3F03004641D3 /* Frameworks */,
+				761B5589267A3F03004641D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PressKeypad;
+			productName = PressKeypad;
+			productReference = 761B558B267A3F03004641D3 /* PressKeypad */;
 			productType = "com.apple.product-type.tool";
 		};
 		76783B892667A03E001F9241 /* KthNumber */ = {
@@ -880,6 +926,9 @@
 					761B557F26786EC6004641D3 = {
 						CreatedOnToolsVersion = 12.5;
 					};
+					761B558A267A3F03004641D3 = {
+						CreatedOnToolsVersion = 12.5;
+					};
 					76783B892667A03E001F9241 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -949,6 +998,7 @@
 				761B556926772C41004641D3 /* CountWords */,
 				761B557426786838004641D3 /* SalesByMatch */,
 				761B557F26786EC6004641D3 /* PickingNumbers */,
+				761B558A267A3F03004641D3 /* PressKeypad */,
 			);
 		};
 /* End PBXProject section */
@@ -998,6 +1048,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				761B558326786EC6004641D3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761B5587267A3F03004641D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761B558E267A3F03004641D3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,6 +1280,28 @@
 			name = Debug;
 		};
 		761B558626786EC6004641D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		761B558F267A3F03004641D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		761B5590267A3F03004641D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1664,6 +1744,15 @@
 			buildConfigurations = (
 				761B558526786EC6004641D3 /* Debug */,
 				761B558626786EC6004641D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761B5591267A3F03004641D3 /* Build configuration list for PBXNativeTarget "PressKeypad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761B558F267A3F03004641D3 /* Debug */,
+				761B5590267A3F03004641D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
