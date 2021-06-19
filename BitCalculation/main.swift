@@ -10,7 +10,6 @@ var input = readLine()!
 var number = Int(input.split(separator: " ")[0])!
 let move = Int(input.split(separator: " ")[1])!
 var bit = [Int]()
-var moved = [Int]()
 var result = 0
 
 while number != 0 {
