@@ -44,6 +44,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>DayoftheProgrammer.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 		<key>DrawingBook.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
@@ -119,12 +124,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>761B555326739DC4004641D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>761B555E26750067004641D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>761B556926772C41004641D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>761B557426786838004641D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>761B557F26786EC6004641D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>761B558A267A3F03004641D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>761B55B6267F301B004641D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -169,7 +199,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>76783C2F266E5A90001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C3A266E67F7001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C45266F4751001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>76783C502670A55F001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76783C5B2671BF7D001F9241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
