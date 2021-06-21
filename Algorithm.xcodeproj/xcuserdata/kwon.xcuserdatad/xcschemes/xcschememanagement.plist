@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
+		<key>BorrowClothes.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
 		<key>ClawMachine.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
