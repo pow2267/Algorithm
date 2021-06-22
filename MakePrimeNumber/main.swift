@@ -11,12 +11,10 @@ func solution(_ nums:[Int]) -> Int {
     var count = 0
     
     for a in 0..<nums.count-2 {
-        for b in 1..<nums.count-1 {
-            for c in 2..<nums.count {
-                if a < b && b < c {
-                    if isPrimeNumber(nums[a]+nums[b]+nums[c]) {
-                        count += 1
-                    }
+        for b in a+1..<nums.count-1 {
+            for c in b+1..<nums.count {
+                if isPrimeNumber(nums[a]+nums[b]+nums[c]) {
+                    count += 1
                 }
             }
         }
