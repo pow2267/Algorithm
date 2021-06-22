@@ -22,17 +22,17 @@
 		<key>BinarySearchTree.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>20</integer>
 		</dict>
 		<key>BitCalculation.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>20</integer>
+			<integer>24</integer>
 		</dict>
 		<key>BorrowClothes.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>21</integer>
 		</dict>
 		<key>ClawMachine.xcscheme_^#shared#^_</key>
 		<dict>
@@ -59,6 +59,11 @@
 			<key>orderHint</key>
 			<integer>18</integer>
 		</dict>
+		<key>DepthFirstSearch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
 		<key>DrawingBook.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
@@ -74,12 +79,12 @@
 		<key>FrogRiverOne.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>21</integer>
+			<integer>22</integer>
 		</dict>
 		<key>InsertPosition.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>23</integer>
+			<integer>19</integer>
 		</dict>
 		<key>KthNumber.xcscheme_^#shared#^_</key>
 		<dict>
@@ -89,7 +94,7 @@
 		<key>MakePrimeNumber.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>23</integer>
 		</dict>
 		<key>OddOccurrencesInArray.xcscheme_^#shared#^_</key>
 		<dict>
