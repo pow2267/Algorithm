@@ -8,17 +8,24 @@
 import Foundation
 
 func solution(_ s: String) -> Int{
-    var str = s[s.startIndex]
-    var chars = [str]
-
-    for i in 1..<s.count {
-        str = s[s.index(s.startIndex, offsetBy: i)]
-        if chars.last == str {
-            chars.removeLast()
+    var chars = [Character]()
+    var result = [Character]()
+    
+    s.forEach {
+        chars.append($0)
+    }
+    
+    for c in chars {
+        if result.isEmpty {
+            result.append(c)
         } else {
-            chars.append(str)
+            if result.last == c {
+                result.removeLast()
+            } else {
+                result.append(c)
+            }
         }
     }
 
-    return (chars.isEmpty ? 1 : 0)
+    return (result.isEmpty ? 1 : 0)
 }
