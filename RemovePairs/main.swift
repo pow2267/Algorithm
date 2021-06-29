@@ -9,32 +9,27 @@ import Foundation
 
 func solution(_ s: String) -> Int{
     var chars = [Character]()
-    var overlap = true
     
     s.forEach {
         chars.append($0)
     }
     
-    repeat {
-        overlap = checkOverlap(chars).0
-        chars = checkOverlap(chars).1
-    } while overlap && chars.count > 0
+    var i = 0
     
-    return (chars.count == 0 ? 1 : 0)
-}
-
-func checkOverlap(_ c: [Character]) -> (Bool, [Character]) {
-    var chars = c
-    var overlap = false
-    
-    for i in 0..<chars.count-1 {
+    while i < chars.count-1 {
         if chars[i] == chars[i+1] {
             chars.remove(at: i+1)
             chars.remove(at: i)
-            overlap = true
-            break
+            if chars.count < 2 {
+                break
+            }
+            if i > 0 {
+                i -= 1
+            }
+        } else {
+            i += 1
         }
     }
     
-    return (overlap, chars)
+    return (chars.count == 0 ? 1 : 0)
 }
