@@ -10,25 +10,17 @@ import Glibc
 
 public func solution(_ H : inout [Int]) -> Int {
     var count = 0
+    var stack = [Int]()
 
-    // use queue
-    while !H.isEmpty {
-        count += 1
-        let value = H.removeLast()
-        var index = H.count-1
-        
-        while index >= 0 && value <= H[index] {
-            H[index] -= value
-            index -= 1
+    // use stack
+    for value in H {
+        while stack.count > 0 && stack.last! > value {
+            stack.removeLast()
         }
-        
-        // 0인 요소를 제외하되, 가장 첫번째 요소부터 연속된 0만 제외
-        while !H.isEmpty {
-            if H.last == 0 {
-                H.removeLast()
-            } else {
-                break
-            }
+
+        if stack.count == 0 || stack.last! < value {
+            stack.append(value)
+            count += 1
         }
     }
 
