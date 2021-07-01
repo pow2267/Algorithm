@@ -14,18 +14,18 @@ public func solution(_ H : inout [Int]) -> Int {
     // use queue
     while !H.isEmpty {
         count += 1
-        var index = 0
-        let value = H.removeFirst()
+        let value = H.removeLast()
+        var index = H.count-1
         
-        while index < H.count && value <= H[index] {
+        while index >= 0 && value <= H[index] {
             H[index] -= value
-            index += 1
+            index -= 1
         }
         
         // 0인 요소를 제외하되, 가장 첫번째 요소부터 연속된 0만 제외
         while !H.isEmpty {
-            if H.first == 0 {
-                H.removeFirst()
+            if H.last == 0 {
+                H.removeLast()
             } else {
                 break
             }
