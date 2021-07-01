@@ -176,6 +176,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>StoneWall.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
 		<key>TapeEquilibrium.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
