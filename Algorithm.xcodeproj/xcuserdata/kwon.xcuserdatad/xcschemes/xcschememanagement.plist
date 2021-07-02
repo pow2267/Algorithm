@@ -49,6 +49,11 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
+		<key>ClimbingLeaderboard.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>43</integer>
+		</dict>
 		<key>CountDiv.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -325,6 +330,11 @@
 			<true/>
 		</dict>
 		<key>76783C5B2671BF7D001F9241</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7697ADA7268F32A400287EF5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
