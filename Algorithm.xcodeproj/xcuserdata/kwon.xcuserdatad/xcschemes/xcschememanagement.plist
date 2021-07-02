@@ -121,6 +121,11 @@
 			<key>orderHint</key>
 			<integer>28</integer>
 		</dict>
+		<key>MagicSquareForming.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
 		<key>MakeCalculator.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
