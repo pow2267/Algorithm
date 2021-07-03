@@ -8,9 +8,10 @@
 import Foundation
 
 func solution(_ array:[Int], _ commands:[[Int]]) -> [Int] {
-    var result: [Int] = []
-    for command in commands.enumerated() {
-        result.append(array[command.element[0]-1...command.element[1]-1].sorted()[command.element[2]-1])
+    var result = [Int]()
+    
+    for cmd in commands {
+        result.append(array[cmd[0]-1...cmd[1]-1].sorted()[cmd[2]-1])
     }
     
     return result
