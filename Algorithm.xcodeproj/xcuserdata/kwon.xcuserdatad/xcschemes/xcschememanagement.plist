@@ -146,6 +146,11 @@
 			<key>orderHint</key>
 			<integer>39</integer>
 		</dict>
+		<key>InsertionSort.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
+		</dict>
 		<key>KthNumber.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
