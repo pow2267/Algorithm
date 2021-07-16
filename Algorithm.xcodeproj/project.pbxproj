@@ -63,6 +63,7 @@
 		7697AE39269C215100287EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7697AE38269C215100287EF5 /* main.swift */; };
 		7697AE44269DD31100287EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7697AE43269DD31100287EF5 /* main.swift */; };
 		7697AE4F269FF07C00287EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7697AE4E269FF07C00287EF5 /* main.swift */; };
+		7697AE5A26A1386F00287EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7697AE5926A1386F00287EF5 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -579,6 +580,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		7697AE5526A1386F00287EF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -695,6 +705,8 @@
 		7697AE43269DD31100287EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7697AE4C269FF07B00287EF5 /* InsertionSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InsertionSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		7697AE4E269FF07C00287EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7697AE5726A1386F00287EF5 /* MergeSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MergeSort; sourceTree = BUILT_PRODUCTS_DIR; };
+		7697AE5926A1386F00287EF5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1097,6 +1109,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7697AE5426A1386F00287EF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1311,6 +1330,7 @@
 				7697AE37269C215100287EF5 /* BubbleSort */,
 				7697AE42269DD31100287EF5 /* SelectionSort */,
 				7697AE4D269FF07C00287EF5 /* InsertionSort */,
+				7697AE5826A1386F00287EF5 /* MergeSort */,
 				76783B6A26666A3C001F9241 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1375,6 +1395,7 @@
 				7697AE36269C215100287EF5 /* BubbleSort */,
 				7697AE41269DD31100287EF5 /* SelectionSort */,
 				7697AE4C269FF07B00287EF5 /* InsertionSort */,
+				7697AE5726A1386F00287EF5 /* MergeSort */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1673,6 +1694,14 @@
 				7697AE4E269FF07C00287EF5 /* main.swift */,
 			);
 			path = InsertionSort;
+			sourceTree = "<group>";
+		};
+		7697AE5826A1386F00287EF5 /* MergeSort */ = {
+			isa = PBXGroup;
+			children = (
+				7697AE5926A1386F00287EF5 /* main.swift */,
+			);
+			path = MergeSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2647,6 +2676,23 @@
 			productReference = 7697AE4C269FF07B00287EF5 /* InsertionSort */;
 			productType = "com.apple.product-type.tool";
 		};
+		7697AE5626A1386F00287EF5 /* MergeSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7697AE5D26A1386F00287EF5 /* Build configuration list for PBXNativeTarget "MergeSort" */;
+			buildPhases = (
+				7697AE5326A1386F00287EF5 /* Sources */,
+				7697AE5426A1386F00287EF5 /* Frameworks */,
+				7697AE5526A1386F00287EF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MergeSort;
+			productName = MergeSort;
+			productReference = 7697AE5726A1386F00287EF5 /* MergeSort */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2827,6 +2873,9 @@
 					7697AE4B269FF07B00287EF5 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					7697AE5626A1386F00287EF5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = 76783B6426666A3C001F9241 /* Build configuration list for PBXProject "Algorithm" */;
@@ -2899,6 +2948,7 @@
 				7697AE35269C215100287EF5 /* BubbleSort */,
 				7697AE40269DD31100287EF5 /* SelectionSort */,
 				7697AE4B269FF07B00287EF5 /* InsertionSort */,
+				7697AE5626A1386F00287EF5 /* MergeSort */,
 			);
 		};
 /* End PBXProject section */
@@ -3356,6 +3406,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7697AE4F269FF07C00287EF5 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7697AE5326A1386F00287EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7697AE5A26A1386F00287EF5 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4731,6 +4789,28 @@
 			};
 			name = Release;
 		};
+		7697AE5B26A1386F00287EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7697AE5C26A1386F00287EF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5252,6 +5332,15 @@
 			buildConfigurations = (
 				7697AE51269FF07C00287EF5 /* Debug */,
 				7697AE52269FF07C00287EF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7697AE5D26A1386F00287EF5 /* Build configuration list for PBXNativeTarget "MergeSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7697AE5B26A1386F00287EF5 /* Debug */,
+				7697AE5C26A1386F00287EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
