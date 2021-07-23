@@ -6,16 +6,24 @@
 //
 
 import Foundation
-import Glibc
+import Glibc
 
 public func solution(_ A : inout [Int]) -> Int {
-    var maxResult = 0
+    var leftSum = Array(repeating: 0, count: A.count)
+    var rightSum = Array(repeating: 0, count: A.count)
+    var result = 0
 
-    for X in 0..<A.count-2 {
-        for Z in X+2..<A.count {
-            maxResult = max(maxResult, A[X+1...Z-1].reduce(0){$0+$1} - A[X+1...Z-1].min()!)
-        }
+    for i in 1..<A.count-1 {
+        leftSum[i] = max(0, leftSum[i-1] + A[i])
     }
-    
-    return maxResult
+
+    for i in (1..<A.count-1).reversed() {
+        rightSum[i] = max(0, rightSum[i+1] + A[i])
+    }
+
+    for i in 1..<A.count-1 {
+        result = max(result, leftSum[i-1] + rightSum[i+1])
+    }
+
+    return result
 }
