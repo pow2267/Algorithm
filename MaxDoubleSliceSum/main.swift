@@ -12,12 +12,10 @@ public func solution(_ A : inout [Int]) -> Int {
     var maxResult = 0
 
     for X in 0..<A.count-2 {
-        for Y in X+1..<A.count-1 {
-            for Z in Y+1..<A.count {
-                maxResult = max(maxResult, A[X+1...Z-1].reduce(0){$0+$1} - A[Y])
-            }
+        for Z in X+2..<A.count {
+            maxResult = max(maxResult, A[X+1...Z-1].reduce(0){$0+$1} - A[X+1...Z-1].min()!)
         }
     }
-
+    
     return maxResult
 }
