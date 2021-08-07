@@ -9,41 +9,28 @@ import Foundation
 
 class Solution {
     func removeDuplicates(_ s: String, _ k: Int) -> String {
-        var words: [String] = s.map {String($0)}
-        var duplicated: Bool = true
-        var count = words.count
+        var stack = [(Character, Int)]()
         
-        repeat {
-            if words.count < k {
-                break
-            }
-            
-            var i = 0
-            while i <= words.count-k {
-                duplicated = true
+        for char in s {
+            if stack.isEmpty || stack.last!.0 != char {
+                stack.append((char, 1))
+            } else {
+                stack[stack.count - 1].1 += 1
                 
-                for j in 1..<k {
-                    if words[i].isEmpty || words[i] != words[i+j] {
-                        duplicated = false
-                        break
-                    }
+                if stack.last!.1 == k {
+                    stack.removeLast()
                 }
-                
-                if duplicated {
-                    for j in 0..<k {
-                        words[i + j] = ""
-                    }
-                    i += 3
-                } else {
-                    i += 1
-                }
-                
             }
-            
-            count = words.count
-            words = words.filter { !$0.isEmpty }
-        } while count != words.count
+        }
         
-        return words.joined()
+        var result = [Character]()
+        
+        for element in stack {
+            for _ in 0..<element.1 {
+                result.append(element.0)
+            }
+        }
+        
+        return String(result)
     }
 }
