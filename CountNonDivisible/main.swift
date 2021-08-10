@@ -8,15 +8,24 @@
 import Foundation
 
 public func solution(_ A : inout [Int]) -> [Int] {
+    var elements: Dictionary<Int, Int> = [:]
     var result: [Int] = Array(repeating: 0, count: A.count)
     var divisors: Set<Int> = []
 
-    for (index1, value1) in A.enumerated() {
-        divisors = findDivisors(value1)
+    for value in A {
+        if elements[value] == nil {
+            elements[value] = 0
+        }
 
-        for value2 in A {
-            if !divisors.contains(value2) {
-                result[index1] += 1
+        elements[value] = elements[value]! + 1
+    }
+
+    for (index, value) in A.enumerated() {
+        divisors = findDivisors(value)
+
+        for (element, count) in elements {
+            if !divisors.contains(element) {
+                result[index] += count
             }
         }
     }
