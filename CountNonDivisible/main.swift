@@ -8,45 +8,46 @@
 import Foundation
 
 public func solution(_ A : inout [Int]) -> [Int] {
-    var elements: Dictionary<Int, Int> = [:]
-    var result: [Int] = Array(repeating: 0, count: A.count)
-    var divisors: Set<Int> = []
+    let aCount = A.count
 
-    for value in A {
-        if elements[value] == nil {
-            elements[value] = 0
-        }
+    // 배열 A의 요소가 가질 수 있는 범위는 1~2*A.count (조건에 명시)
+    // 1을 더해주는 건 배열의 0번째를 사용하지 않기 위함
+    var elements = Array(repeating: 0, count: (aCount * 2) + 1)
 
-        elements[value] = elements[value]! + 1
+    // 배열 A의 각 요소값에 해당하는 elements배열에 요소의 개수 만큼 +1
+    // Ex. A[0] = 3 이면 elements[3] = 1
+    for i in 0..<aCount {
+        elements[A[i]] += 1
     }
 
-    for (index, value) in A.enumerated() {
-        divisors = findDivisors(value)
+    // non-divisor 요소의 개수
+    var nonDivisors = Array(repeating: 0, count: aCount)
 
-        for (element, count) in elements {
-            if !divisors.contains(element) {
-                result[index] += count
+    for i in 0..<aCount {
+        var divisors = 0
+        var j = 1
+
+        // A[i]의 약수 구하기
+        while j * j <= A[i] {
+            if A[i] % j == 0 {
+                // A[i]의 약수에 해당하는 A의 요소의 개수를 합산
+                divisors += elements[j]
+
+                // A[i]가 j의 제곱일 경우 제외
+                if A[i] / j != j {
+                    divisors += elements[A[i]/j]
+                }
             }
+            
+            j += 1
         }
+        
+        // 약수가 아닌 요소의 개수의 합이니까 총 개수에서 약수의 개수를 빼줌
+        nonDivisors[i] = aCount - divisors
     }
 
-    return result
+    return nonDivisors
 }
 
-private func findDivisors(_ num: Int) -> Set<Int> {
-    var divisors: Set<Int> = []
-    
-    for i in 1..<num {
-        if i * i > num {
-            break
-        }
-
-        if num % i == 0 {
-            divisors.insert(i)
-            divisors.insert(num / i)
-        }
-    }
-    divisors.insert(num)
-
-    return divisors
-}
+var test = [3, 1, 2, 3, 6]
+print(solution(&test))
