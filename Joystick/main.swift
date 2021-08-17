@@ -20,29 +20,46 @@ func solution(_ name: String) -> Int {
         var count1 = 0
         var interval1 = 0
         
-        repeat {
-            interval1 += 1
-            next1 = index + interval1 >= names.count ? index + interval1 - names.count : index + interval1
-            count1 = countMoves(names[next1])
-        } while count1 == 0
-        
         var next2 = 0
         var count2 = 0
         var interval2 = 0
         
         repeat {
+            interval1 += 1
+            next1 = index + interval1 >= names.count ? index + interval1 - names.count : index + interval1
+            count1 = countMoves(names[next1])
+            
             interval2 += 1
             next2 = index - interval2 < 0 ? names.count - 1 : index - interval2
             count2 = countMoves(names[next2])
-        } while count2 == 0
-        
-        if interval1 < interval2 {
-            index = next1
-            count = count + count1 + interval1
-        } else {
-            index = next2
-            count = count + count2 + interval2
-        }
+            
+            if count1 != 0 || count2 != 0 {
+                // count1 == 0, count2 != 0인 경우
+                if count1 == 0 {
+                    index = next2
+                    count = count + count2 + interval2
+                    break
+                }
+                
+                // count1 != 0, count2 == 0인 경우
+                if count2 == 0 {
+                    index = next1
+                    count = count + count1 + interval1
+                    break
+                }
+                
+                // count1 != 0, count2 != 0인 경우
+                if interval1 <= interval2 {
+                    index = next1
+                    count = count + count1 + interval1
+                    break
+                } else {
+                    index = next2
+                    count = count + count2 + interval2
+                    break
+                }
+            }
+        } while true
         
         names[index] = "A"
     }
@@ -75,3 +92,4 @@ func countMoves(_ word: String) -> Int {
 
 print(solution("JEROEN"))
 print(solution("BABAB"))
+print(solution("ABAAAAAAAAABB"))
