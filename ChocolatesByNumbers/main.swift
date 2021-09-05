@@ -6,22 +6,18 @@
 //
 
 import Foundation
+import Glibc
 
 public func solution(_ N: Int, _ M: Int) -> Int {
-    var result: [Int] = [0]
-    var number = 0
-    var share = 0
+    var large = (N >= M ? N : M)
+    var small = (N >= M ? M : N)
+    var temp = 0
 
-    while true {
-        number += M
-        share = number % N
-
-        if result.contains(share) {
-            break
-        } else {
-            result.append(share)
-        }
+    while large % small != 0 {
+        temp = large % small // 몫
+        large = small
+        small = temp
     }
 
-    return result.count
+    return (N / small)
 }
