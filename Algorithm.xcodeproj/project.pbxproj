@@ -79,6 +79,7 @@
 		7697AE5A26A1386F00287EF5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7697AE5926A1386F00287EF5 /* main.swift */; };
 		76A0EF0F26C296B000995575 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0EF0E26C296B000995575 /* main.swift */; };
 		76D9C88D26E1DC4A000E72D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D9C88C26E1DC4A000E72D5 /* main.swift */; };
+		76D9C8BB26E4E2E9000E72D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D9C8BA26E4E2E9000E72D5 /* main.swift */; };
 		76F9268B26BEB68400D72F7B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9268A26BEB68400D72F7B /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -749,6 +750,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		76D9C8B626E4E2E8000E72D5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		76F9268626BEB68400D72F7B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -907,6 +917,8 @@
 		76A0EF0E26C296B000995575 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76D9C88A26E1DC4A000E72D5 /* MaxConsecutiveOnes3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxConsecutiveOnes3; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D9C88C26E1DC4A000E72D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		76D9C8B826E4E2E8000E72D5 /* ChocolatesByNumbers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ChocolatesByNumbers; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D9C8BA26E4E2E9000E72D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76F9268826BEB68400D72F7B /* AdjacentDuplicates */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdjacentDuplicates; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F9268A26BEB68400D72F7B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1430,6 +1442,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76D9C8B526E4E2E8000E72D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		76F9268526BEB68400D72F7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1772,6 +1791,7 @@
 				76220A8A26C6196400A71B24 /* OpenChat */,
 				76220AD926CB5D7800A71B24 /* Joystick */,
 				76D9C88B26E1DC4A000E72D5 /* MaxConsecutiveOnes3 */,
+				76D9C8B926E4E2E9000E72D5 /* ChocolatesByNumbers */,
 				76783B6A26666A3C001F9241 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1854,6 +1874,7 @@
 				76220A8926C6196400A71B24 /* OpenChat */,
 				76220AD826CB5D7800A71B24 /* Joystick */,
 				76D9C88A26E1DC4A000E72D5 /* MaxConsecutiveOnes3 */,
+				76D9C8B826E4E2E8000E72D5 /* ChocolatesByNumbers */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2176,6 +2197,14 @@
 				76D9C88C26E1DC4A000E72D5 /* main.swift */,
 			);
 			path = MaxConsecutiveOnes3;
+			sourceTree = "<group>";
+		};
+		76D9C8B926E4E2E9000E72D5 /* ChocolatesByNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				76D9C8BA26E4E2E9000E72D5 /* main.swift */,
+			);
+			path = ChocolatesByNumbers;
 			sourceTree = "<group>";
 		};
 		76F9268926BEB68400D72F7B /* AdjacentDuplicates */ = {
@@ -3447,6 +3476,23 @@
 			productReference = 76D9C88A26E1DC4A000E72D5 /* MaxConsecutiveOnes3 */;
 			productType = "com.apple.product-type.tool";
 		};
+		76D9C8B726E4E2E8000E72D5 /* ChocolatesByNumbers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76D9C8BE26E4E2E9000E72D5 /* Build configuration list for PBXNativeTarget "ChocolatesByNumbers" */;
+			buildPhases = (
+				76D9C8B426E4E2E8000E72D5 /* Sources */,
+				76D9C8B526E4E2E8000E72D5 /* Frameworks */,
+				76D9C8B626E4E2E8000E72D5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChocolatesByNumbers;
+			productName = ChocolatesByNumbers;
+			productReference = 76D9C8B826E4E2E8000E72D5 /* ChocolatesByNumbers */;
+			productType = "com.apple.product-type.tool";
+		};
 		76F9268726BEB68400D72F7B /* AdjacentDuplicates */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76F9268E26BEB68500D72F7B /* Build configuration list for PBXNativeTarget "AdjacentDuplicates" */;
@@ -3696,6 +3742,9 @@
 					76D9C88926E1DC4A000E72D5 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
+					76D9C8B726E4E2E8000E72D5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 					76F9268726BEB68400D72F7B = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -3789,6 +3838,7 @@
 				76220A8826C6196400A71B24 /* OpenChat */,
 				76220AD726CB5D7800A71B24 /* Joystick */,
 				76D9C88926E1DC4A000E72D5 /* MaxConsecutiveOnes3 */,
+				76D9C8B726E4E2E8000E72D5 /* ChocolatesByNumbers */,
 			);
 		};
 /* End PBXProject section */
@@ -4381,6 +4431,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				76D9C88D26E1DC4A000E72D5 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76D9C8B426E4E2E8000E72D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76D9C8BB26E4E2E9000E72D5 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6151,6 +6209,28 @@
 			};
 			name = Release;
 		};
+		76D9C8BC26E4E2E9000E72D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76D9C8BD26E4E2E9000E72D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W944A2445R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		76F9268C26BEB68500D72F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -6847,6 +6927,15 @@
 			buildConfigurations = (
 				76D9C88E26E1DC4A000E72D5 /* Debug */,
 				76D9C88F26E1DC4A000E72D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76D9C8BE26E4E2E9000E72D5 /* Build configuration list for PBXNativeTarget "ChocolatesByNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76D9C8BC26E4E2E9000E72D5 /* Debug */,
+				76D9C8BD26E4E2E9000E72D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
