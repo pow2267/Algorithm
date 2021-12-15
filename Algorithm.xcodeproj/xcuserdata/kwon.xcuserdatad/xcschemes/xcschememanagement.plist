@@ -231,6 +231,11 @@
 			<key>orderHint</key>
 			<integer>80</integer>
 		</dict>
+		<key>Int64Descending.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>92</integer>
+		</dict>
 		<key>IntactSquare.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
